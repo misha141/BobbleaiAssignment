@@ -14,18 +14,22 @@ Can you tell what he might be doing wrong? and how he can fix it? demonstrate ho
 The iterators returned by this ArrayList's iterator and listIterator methods are fail-fast: if the list is structurally modified at any time after the iterator is created, in any way except through the iterator's own remove or add methods, the iterator will throw a ConcurrentModificationException. Thus, in the face of concurrent modification, the iterator fails quickly and cleanly, rather than risking arbitrary, non-deterministic behavior at an undetermined time in the future.
 
 Iterator<String> lir = al.iterator(); // Iterator created
-  
+```  
 while (lir.hasNext())
 
-    System.out.println(lir.next());
+System.out.println(lir.next());
     
 al.add(2, "inserted"); 
 
 while (lir.hasNext()) 
 
-    System.out.println(lir.next());
+System.out.println(lir.next());
+
+```
 
 ## Resolution
+
+```
 ...
 al.add(2, "inserted");
 
@@ -33,5 +37,7 @@ lir = al.iterator();
 
 while (lir.hasNext()) 
 
-    System.out.println(lir.next());
+System.out.println(lir.next());
+    
+ ```   
     
