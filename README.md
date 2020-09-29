@@ -28,7 +28,7 @@ ABOUT APPLICATION:
 This app shows all the input data entered by a authenticated user as a thread of messages. The data is stored in firebase realtime database. 
 The screen shots of the application are attached below.
 
-
+<img src="messagethread.jpeg" width="150" height="250">
 
 
 
